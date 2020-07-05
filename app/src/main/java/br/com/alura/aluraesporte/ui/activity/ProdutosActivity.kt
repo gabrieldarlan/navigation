@@ -46,10 +46,10 @@ class ProdutosActivity : AppCompatActivity() {
                     val dado = Bundle()
                     dado.putLong(CHAVE_PRODUTO_ID, produtoComprado.id)
                     pagamentoFragment.arguments = dado
-                    transacaoFragment {
-                        addToBackStack(null)
-                        replace(R.id.container, pagamentoFragment)
-                    }
+//                    transacaoFragment {
+//                        addToBackStack(null)
+//                        replace(R.id.container, pagamentoFragment)
+//                    }
                 }
             }
             is PagamentoFragment -> {
